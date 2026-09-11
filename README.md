@@ -119,9 +119,9 @@ inverse or a wrong deterministic nonce cannot accidentally reproduce a published
 signature.
 
 ```bash
-clojure -M:test                             # JVM  — 20 tests, 28 assertions
-nbb --classpath src:test bin/run_tests.cljk  # cljs — 29 tests, 48 assertions
-clojure -M:lint
+kbb -M:test                             # JVM  — 20 tests, 28 assertions
+kbb --backend sci --classpath src:test bin/run_tests.cljk  # cljs — 29 tests, 48 assertions
+kbb -M:lint
 ```
 
 The cljs run includes the shared `.cljc` suite plus `test_cljs_primitives.cljs`,
@@ -147,7 +147,7 @@ io.github.kotoba-lang/eth-crypto {:git/sha "<sha>"}
 ## Test
 
 ```bash
-clojure -M:test
+kbb -M:test
 # Ran 5 tests containing 7 assertions. 0 failures, 0 errors.
 ```
 
