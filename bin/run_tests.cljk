@@ -7,7 +7,7 @@
 ;; modInverse/modPow were wrong anywhere, these go red — a wrong hash or a wrong
 ;; deterministic nonce cannot accidentally reproduce a published signature.
 ;;
-;;   nbb --classpath src:test bin/run_tests.cljs
+;;   nbb --classpath src:test bin/run_tests.cljk
 (ns run-tests
   (:require [cljs.test :as t]
             [eth-crypto.test-eth-crypto]
