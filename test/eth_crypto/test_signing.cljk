@@ -103,7 +103,7 @@
 ;; secp256k1 via @noble) — rather than by this library, so the assertion is a
 ;; genuine cross-implementation check and not a snapshot of our own output.
 ;; Same private key as the EIP-155 example above. Regenerate with:
-;;   nbb scratch.cljs  (viem: signTransaction {type:'eip1559', …})
+;;   kbb --backend sci scratch.cljk  (viem: signTransaction {type:'eip1559', …})
 ;; viem independently agrees this key's address is the one asserted below,
 ;; which is also the address the EIP-155 canonical example is signed by.
 
