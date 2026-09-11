@@ -43,7 +43,7 @@
   external references (the EIP-712 'Ether Mail' spec digest and signature, the
   EIP-155 canonical worked example, viem's EIP-1559 vectors) gate both, so a
   divergence turns one of the two suites red. Run the cljs side with
-  `nbb --classpath src:test bin/run_tests.cljs`.
+  `nbb --classpath src:test bin/run_tests.cljk`.
 
   NOT CONSTANT-TIME, on either platform: BigInteger and BigInt arithmetic are
   variable-time and `pt-mul` is a plain double-and-add. Fine for signing with a
@@ -63,7 +63,7 @@
   `org.bouncycastle.*` import throws ClassNotFoundException). So Keccak-256 is
   implemented here as the Keccak-f[1600] permutation, and secp256k1 ecrecover via
   `java.math.BigInteger` (which IS available). Verified against the canonical
-  EIP-712 'Ether Mail' spec vector — see test/eth_crypto/test_eth_crypto.cljc.
+  EIP-712 'Ether Mail' spec vector — see test/eth_crypto/test_eth_crypto.cljk.
 
   Public API (all of it dual-platform):
     keccak256           bytes -> 32 bytes (Keccak-256, NOT SHA3-256)
