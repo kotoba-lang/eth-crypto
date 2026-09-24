@@ -4,7 +4,7 @@
   (eips.ethereum.org/EIPS/eip-712) — BOTH the typed-data digest AND secp256k1
   ecrecover of the signer — plus Keccak-256 and EIP-55 known-answer vectors. If
   this fails, the crypto must NOT ship."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [eth-crypto.core :as eth]))
 
 ;; ── Keccak-256 known-answer (Keccak, NOT SHA3) ──

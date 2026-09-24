@@ -5,7 +5,7 @@
   itself) byte-for-byte: the signing hash, v/r/s, and the full raw signed tx.
   Plus a sign→ecrecover roundtrip and an address-from-privkey known vector.
   If this fails, the signing crypto must NOT ship."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [eth-crypto.core :as eth]))
 
 (defn- pad64
