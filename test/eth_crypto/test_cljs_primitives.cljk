@@ -14,7 +14,7 @@
   rate), which the shared suite's short vectors do not exercise — the absorb loop
   and the pad-to-rate arithmetic only get tested when the message spans more than
   one permutation. The expected value is viem's."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [eth-crypto.keccak :as keccak]
             [eth-crypto.secp256k1 :as secp]
             [eth-crypto.sha256 :as sha256]))
